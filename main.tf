@@ -49,3 +49,12 @@ resource "aws_instance" "foo" {
   }
 
 }
+
+
+output "instance_ami_id" {
+  value = aws_instance.foo.id
+}
+
+output "instance_ami_arn" {
+  value = aws_instance.foo.arn
+}
