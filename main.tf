@@ -22,7 +22,7 @@ resource "aws_subnet" "my_subnet" {
   availability_zone = "eu-west-2a"
 
   tags = {
-    Name = "tf-example"
+    Name = "nico-vibert-subnet"
   }
 }
 
