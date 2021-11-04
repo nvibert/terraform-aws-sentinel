@@ -49,7 +49,7 @@ resource "aws_instance" "foo" {
   }
 
   tags = {
-    Name = "nico-terraform"
+    Name = "nico-terraform-hsbc"
   }
 
 }
