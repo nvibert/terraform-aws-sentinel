@@ -37,7 +37,7 @@ resource "aws_network_interface" "foo" {
 
 resource "aws_instance" "foo" {
   ami           = "ami-089539692cca55c6c" # eu-west-2
-  instance_type = "c4.4xlarge"
+  instance_type = "t2.micro"
 
   network_interface {
     network_interface_id = aws_network_interface.foo.id
@@ -49,7 +49,7 @@ resource "aws_instance" "foo" {
   }
 
   tags = {
-    Name = "nico-terraform-hsbc"
+    Name = "nico-terraform"
   }
 
 }
